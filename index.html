@@ -109,7 +109,143 @@
 
     <div class="card">
   <h2>Proposal Slide Deck</h2>
+  <iframe src="<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hoffman AI Solutions</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header { background: #1e293b; color: white; padding: 3rem 2rem 2rem; text-align: center; position: relative; overflow: hidden; }
+    header img { max-width: 150px; margin-bottom: 1rem; }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header .hero { font-size: 1.6rem; font-weight: 700; margin-top: 1rem; color: #e2e8f0; opacity: 0; animation: fadeInUp 1s ease-out forwards; }
+    header .tagline { font-size: 1.1rem; font-style: italic; color: #cbd5e1; margin-top: 0.5rem; opacity: 0; animation: fadeInUp 1s ease-out forwards; animation-delay: 0.5s; }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .profile-pic { position: absolute; top: 1rem; right: 1rem; border-radius: 50%; width: 75px; height: 75px; object-fit: cover; border: 2px solid white; }
+    section { padding: 2rem; max-width: 900px; margin: 0 auto; }
+    .card { background: white; padding: 1.5rem; border-radius: 1rem; margin-bottom: 1.5rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); }
+    .card h2 { margin-top: 0; }
+    .testimonial { display: none; font-style: italic; margin-bottom: 1rem; transition: opacity 0.5s ease; }
+    .testimonial.active { display: block; }
+    .testimonial::before { content: "\201C"; font-size: 2rem; vertical-align: top; }
+    .testimonial::after { content: "\201D"; font-size: 2rem; vertical-align: bottom; }
+    .author { text-align: right; font-weight: bold; margin-top: -1rem; margin-bottom: 1rem; }
+    .testimonial-nav { text-align: center; margin-top: 1rem; }
+    .testimonial-nav button {
+      background: #0f766e; color: white; border: none;
+      padding: 0.5rem 1rem; margin: 0 0.25rem;
+      border-radius: 0.5rem; cursor: pointer; font-weight: 600;
+    }
+    footer { background: #1e293b; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    .cta { background: #0f766e; color: white; padding: 1rem 2rem; display: inline-block; text-decoration: none; border-radius: 0.5rem; margin-top: 1rem; }
+    iframe { width: 100%; height: 500px; border: none; margin-top: 2rem; }
+    .start-button {
+      display: block; width: fit-content; margin: 2rem auto 0;
+      padding: 1rem 2rem; background: #0f766e; color: white;
+      font-weight: 600; text-decoration: none; border-radius: 0.75rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Hoffman AI Solutions Logo">
+    <h1>Real-World Solutions. AI that Works for You.</h1>
+    <div class="hero">Turn Busywork into Smartwork</div>
+    <div class="tagline">From emails to inventory, we automate the tasks that slow you down.</div>
+    <img src="profile.jpg" alt="Mike Hoffman Photo" class="profile-pic">
+    <a href="#services" class="start-button">Start Here</a>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>About Mike</h2>
+      <p>I’m a seasoned Operations & Logistics leader with over 20 years of experience helping companies streamline their processes. Now, I’m bringing AI to the front lines—making powerful tools accessible to businesses that need efficiency without complexity.</p>
+    </div>
+
+    <div class="card">
+      <h2>What I Do</h2>
+      <ul>
+        <li>✅ AI-powered workflow automation (reporting, emails, scheduling)</li>
+        <li>✅ Customer support chatbots and follow-up automation</li>
+        <li>✅ Inventory, delivery, and project forecasting tools</li>
+        <li>✅ Custom solutions tailored to your industry</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>How It Works</h2>
+      <ol>
+        <li><strong>Step 1:</strong> Free AI Readiness Audit</li>
+        <li><strong>Step 2:</strong> Tailored Solution Plan</li>
+        <li><strong>Step 3:</strong> 7-Day Setup & Launch</li>
+        <li><strong>Step 4:</strong> Ongoing Support + Optimization</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>Testimonials</h2>
+      <div class="testimonial active">We were spending hours on manual reporting. Mike gave us back that time — and then some.<div class="author">— Jessica M., Logistics Manager</div></div>
+      <div class="testimonial">Our customer follow-up system went from chaos to completely automated. Incredible work!<div class="author">— Carlos D., Service Director</div></div>
+      <div class="testimonial">I was skeptical about AI at first. Mike made it make sense, and our ROI is already showing.<div class="author">— Sarah P., Operations Lead</div></div>
+      <div class="testimonial-nav">
+        <button onclick="showTestimonial(0)">1</button>
+        <button onclick="showTestimonial(1)">2</button>
+        <button onclick="showTestimonial(2)">3</button>
+      </div>
+    </div>
+
+    <script>
+      const testimonials = document.querySelectorAll('.testimonial');
+      let current = 0;
+      const interval = setInterval(() => {
+        testimonials[current].classList.remove('active');
+        current = (current + 1) % testimonials.length;
+        testimonials[current].classList.add('active');
+      }, 5000);
+      function showTestimonial(index) {
+        clearInterval(interval);
+        testimonials.forEach(t => t.classList.remove('active'));
+        testimonials[index].classList.add('active');
+        current = index;
+      }
+    </script>
+
+    <div class="card">
+  <h2>Proposal Slide Deck</h2>
   <iframe src="https://docs.google.com/presentation/d/1btum93JnJRGII94gFIbb9-J-jhFJgC4S/embed?start=false&loop=false&delayms=3000" 
+          frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+  </iframe>
+</div>
+
+    <div class="card" id="services">
+      <h2>Services Framework</h2>
+      <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://chat.openai.com/mnt/data/Mike_Hoffman_AI_Services_Deck.pptx"></iframe>
+    </div>
+
+    <div class="card">
+      <h2>Let’s Talk</h2>
+      <p>Ready to explore what AI can do for your business? Reach out and let’s have a conversation.</p>
+      <p>Email: <a href="mailto:mikenmarilou@gmail.com">mikenmarilou@gmail.com</a><br>
+      Phone: (980) 202-8374</p>
+      <a href="mailto:mikenmarilou@gmail.com" class="cta">Schedule a Free Audit</a>
+      <br><br>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-zxT_MrvZ9Ika5hz-kFBtodBvHsWlo1qqfQBN0DVDyqoKDQ/viewform?usp=dialog" class="cta" target="_blank">Fill Out the AI Audit Form</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mike Hoffman | Hoffman AI Solutions</p>
+  </footer>
+</body>
+</html>" 
           frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
   </iframe>
 </div>
